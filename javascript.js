@@ -171,30 +171,180 @@
 
 
 
-let one1 = +prompt("enter first side")
-let two2 = +prompt("enter second side")
-let three3 = +prompt("enter third side")
+// let one1 = +prompt("enter first side")
+// let two2 = +prompt("enter second side")
+// let three3 = +prompt("enter third side")
 
-o1 = one1+two2
-t2 = one1+three3
-t3 = two2+three3
-
-
-if(one1 == two2 && one1 == three3){
-    document.write("Equilateral")
-}
-else if(o1 == three3 || t2 == two2 || t3 == one1 ){
-    document.write("Not a triangle")
-}
-else if (one1 == two2 || two2 == three3 || one1 == three3){
-    document.write("Isosceles")
-}
-else if(one1 != two2 && one1 != three3){
-    document.write("Scalene")
-}
+// o1 = one1+two2
+// t2 = one1+three3
+// t3 = two2+three3
 
 
+// if(one1 == two2 && one1 == three3){
+//     document.write("Equilateral")
+// }
+// else if(o1 == three3 || t2 == two2 || t3 == one1 ){
+//     document.write("Not a triangle")
+// }
+// else if (one1 == two2 || two2 == three3 || one1 == three3){
+//     document.write("Isosceles")
+// }
+// else if(one1 != two2 && one1 != three3){
+//     document.write("Scalene")
+// }
 
+
+
+
+
+
+// let student = []
+// student.push("faheem")
+// student.push("rehmat")
+// student.push("zeeshan")
+// student.push("Tariq")
+// student.push("sheri")
+// student.push("Adil")
+// student.push("manan")
+
+// console.log(student);
+
+// let number = [1,2,3,4,5,0]
+// let boolean = [true,false]
+// let mixed = [1,2,true,"tariq",null,undefined]
+
+// console.log(number);
+// console.log(boolean);
+// console.log(mixed);
+
+// let qualification = [ 'SSC', 'HSC', 'BCS','BS', 'BCOM', 'MS', 'M.Phil.', 'PhD']
+
+// console.log("Qualification: ");
+// console.log(qualification[0]);
+// console.log(qualification[1]);
+// console.log(qualification[2]);
+// console.log(qualification[3]);
+// console.log(qualification[4]);
+// console.log(qualification[5]);
+// console.log(qualification[6]);
+// console.log(qualification[7]);
+
+
+// let studentName = ['Adil Amin','Tariq Raheem', 'Rehmat Ullah']
+// let score = [520,540,530]
+// let total = 600;
+
+// console.log(`Score of Adil Amin is ${score[0]}. Percentage: ${score[0]/total*100} `);
+// console.log(`Score of Adil Tariq Raheem is ${score[1]}. Percentage: ${score[1]/total*100} `);
+// console.log(`Score of Rehmat Ullah is ${score[2]}. Percentage: ${(score[2]/total*100)} `);
+
+
+// let color = 'oragne';
+
+// let colors = ['red','green', 'blue']
+
+// colors.splice(0,0,color);
+
+// console.log(colors);
+
+
+// let color = 'oragne';
+
+// let colors = ['red','green', 'blue']
+
+// colors.push(color);
+
+// console.log(colors);
+
+
+// let color = 'yellow';
+// let colorz = 'oragne';
+
+// let colors = ['red','green', 'blue']
+
+// colors.splice(0,0,color,colorz);
+
+// console.log(colors);
+
+
+
+// let colors = ['red','green', 'blue']
+
+// colors.shift();
+
+// console.log(colors);
+
+
+// let number = [320,230,480,120]
+
+// console.log(number.sort());
+
+
+// let cities = ['karachi','lahore','islamabad','quetta','peshawar']
+
+// let city = cities.slice(2,4)
+
+// console.log(cities);
+// console.log(city);
+
+
+// let arr = ['this', 'is', 'my', 'cat']
+
+// let array = arr.join(' ')
+
+// console.log(array);
+
+
+
+// let arr = []
+
+// arr.push('tariq')
+// arr.push('adil')
+// arr.push('rehmat')
+// arr.push('sheri')
+
+// console.log(arr);
+
+// arr.shift()
+// arr.shift()
+// arr.shift()
+
+// console.log(arr);
+
+
+
+// let arr = []
+
+// arr.push('tariq')
+// arr.push('adil')
+// arr.push('rehmat')
+// arr.push('sheri')
+
+// console.log(arr);
+
+// arr.pop()
+// arr.pop()
+
+// console.log(arr);
+
+// let array = [ 'nokia','apple','samsung','motorola','sony','haier' ]
+
+// document.write(array[0]  + '<br>')
+// document.write(array[1] + '<br>')
+// document.write(array[2] + '<br>')
+// document.write(array[3] + '<br>')
+// document.write(array[4] + '<br>')
+// document.write(array[5] + '<br>')
+
+
+
+let studentName = prompt('enter student name');
+
+let students = ['rehmat', 'adil', 'faheem','sheri','zeeshan','mannan','iqra','asma','mubeen','tariq','sajal','maryam','alisa','sheeza nazir','dua','mamona']
+
+students.splice(students.indexOf(studentName),1);
+
+document.write(students);
 
 
 

@@ -338,13 +338,40 @@
 
 
 
-let studentName = prompt('enter student name');
+// let studentName = prompt('enter student name');
 
 let students = ['rehmat', 'adil', 'faheem','sheri','zeeshan','mannan','iqra','asma','mubeen','tariq','sajal','maryam','alisa','sheeza nazir','dua','mamona']
 
-students.splice(students.indexOf(studentName),1);
 
-document.write(students);
+// for(let i =0; i<students.length; i++){
+//     console.log(students[i]);
+// }
+
+
+const nums = [1,3,4,5,2,3,4,5,3,5,5,6,4]
+
+let sum = 0; // 1, 3,,
+
+for(let i =0 ; i <nums.length; i++){
+
+
+sum  += nums[i];
+
+
+
+}
+
+console.log(sum);
+
+
+
+
+
+
+
+// students.splice(students.indexOf(studentName),1);
+
+// document.write(students);
 
 
 

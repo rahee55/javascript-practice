@@ -340,38 +340,64 @@
 
 // let studentName = prompt('enter student name');
 
-let students = ['rehmat', 'adil', 'faheem','sheri','zeeshan','mannan','iqra','asma','mubeen','tariq','sajal','maryam','alisa','sheeza nazir','dua','mamona']
+// let students = ['rehmat', 'adil', 'faheem','sheri','zeeshan','mannan','iqra','asma','mubeen','tariq','sajal','maryam','alisa','sheeza nazir','dua','mamona']
 
 
 // for(let i =0; i<students.length; i++){
 //     console.log(students[i]);
 // }
 
-
-const nums = [1,3,4,5,2,3,4,5,3,5,5,6,4]
-
-let sum = 0; // 1, 3,,
-
-for(let i =0 ; i <nums.length; i++){
-
-
-sum  += nums[i];
-
-
-
-}
-
-console.log(sum);
-
-
-
-
-
-
-
 // students.splice(students.indexOf(studentName),1);
 
 // document.write(students);
 
 
+// const nums = [1,3,4,5,2,3,4,5,3,5,5,6,4]
 
+// let sum = 0; // 1, 3,,
+
+// for(let i =0 ; i <nums.length; i++){
+
+
+// sum  += nums[i];
+
+
+
+// }
+
+// console.log(sum);
+
+
+
+
+// let arr = [0,1,2,3,,[3,4,5,1,[1.2,0,3]]] 
+
+// console.log(arr +(' '));
+
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// let number = prompt('enter your number');
+// let length = prompt('enter your length');
+
+// for(let i = 1; i <=length; i++){
+//     document.write(`${number}  x  ${i}  =   ${i*number} <br>`);
+// }
+
+// let fruits = ['apple', 'banana', 'mango', 'orange','strawberry']
+
+// for(i = 0; i < fruits.length; i++){
+//     const arr = fruits[i]
+//     document.write(arr + '<br>')
+// }
+
+// for (let i = 1; i < 15; i++) {
+//     document.write(`${i} <br>`)
+// }
+
+
+for (let i = 1; i > 10;i-- ) {
+    console.log(i);
+}

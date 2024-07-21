@@ -354,7 +354,7 @@
 
 // const nums = [1,3,4,5,2,3,4,5,3,5,5,6,4]
 
-// let sum = 0; // 1, 3,,
+// let sum = 0; // 1, 3,
 
 // for(let i =0 ; i <nums.length; i++){
 
@@ -398,6 +398,55 @@
 // }
 
 
-for (let i = 1; i > 10;i-- ) {
-    console.log(i);
+// for (let i = 10; i >= 0;i--) {
+//     console.log(i);
+// }
+
+
+// for (let i = 0; i <= 20; i++) {
+//     if(i%2 === 0){
+//         console.log(i);
+//     }
+    
+// }
+
+
+// for (let i = 0; i <= 20; i++) {
+//     if(i%2 !== 0){
+//         console.log(i);
+//     }
+    
+// }
+
+
+// for (let i = 2; i <= 20; i++) {
+//     if(i%2 === 0){
+//         console.log(i + "k");
+//     }
+    
+// }
+
+// let number = 5;
+// for(let i = 1; i <= 100; i++){
+//   console.log(`${number}  x  ${i}  =   ${i*number} `);
+// }
+    
+// let item = prompt("enter items")
+
+// let items = ['cake','apple pie','cookie','chips','patties']
+
+// if (item == 'cake' || item == 'cookie' || item == 'chips') {
+//     console.log(`${item} is available at ${items.indexOf(item)} in our bakery`);
+// }
+//  else if (item == 'apple pie' || item == 'patties') {
+//     console.log(`we are sorry. ${item} is not available at our bakery`);
+// }
+
+let student1 = {
+    name :'faheem',
+    fatherName : 'Nasrullah',
+    age : 23,
+    class : 'BSSE',
+    roleNumber : 23,
+    marks : 309
 }

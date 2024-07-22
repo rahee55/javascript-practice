@@ -442,11 +442,57 @@
 //     console.log(`we are sorry. ${item} is not available at our bakery`);
 // }
 
-let student1 = {
-    name :'faheem',
-    fatherName : 'Nasrullah',
-    age : 23,
-    class : 'BSSE',
-    roleNumber : 23,
-    marks : 309
+// let Name = prompt('enter your name');
+// let changeName = prompt('enter your new name');
+// let Class = prompt('enter your name');
+
+
+
+// LMS system
+
+
+let Data = prompt('enter (get) to display data')
+
+let students =[
+    {name :'faheem',fatherName : 'Nasrullah',age : 23,class : 'BSSE',roleNumber : 23,marks : 309},
+    {name :'zeeshan',fatherName : 'ramzan',age : 22,class : 'BSSE',roleNumber : 19,marks : 389},
+    {name :'adil',fatherName : 'amin',age : 21,class : 'BSSE',roleNumber : 10,marks : 299},
+    {name :'rehmat',fatherName : 'sadiq',age : 20,class : 'BSSE',roleNumber : 4,marks : 359},
+    {name :'tariq',fatherName : 'raheem',age : 22,class : 'BSSE',roleNumber : 1,marks : 390}
+]
+
+// display data 
+
+if(Data == 'get'){
+    console.table(students);
 }
+
+//delete student data
+let Delete = prompt('enter student name to delete data')
+
+for(let i =0; i<students.length; i++){
+    if(students[i].name == Delete){
+        students.splice(i,1)
+    }
+}
+console.table(students);
+
+// update in object value 
+
+let update = prompt('enter name to update')
+let change = prompt('enter property which want to change')
+let value = +prompt('enter your remarks');
+for(let i =0; i<students.length; i++){
+    if(students[i].name == update){
+        if(change == "age"  ){
+            students[i].age = value;
+        }
+        else if(change == 'marks'){
+            students[i].marks = value
+        }
+        
+    }
+}
+console.table(students);
+
+

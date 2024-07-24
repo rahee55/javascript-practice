@@ -594,8 +594,39 @@
 // }
 // greet('Tariq');
 
-let arr = [2,3,4,5,7,10,2,1,9,20,23]
+// let array = [23,12,3,546,786,2,9,1,0,22,6457]
 
-let max = (arr) => arr.reduce((largenumber,num) => Math.min(largenumber,num));
+// function number(array){
+//     let max = array[0]
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i] < max){
+//             max = array[i]
+//         }
+//     }
+//     return max
+// }
+// console.log(number(array));
 
-console.log(max(arr));
+// let array = [1,2,12,5,3,14,6,18,9,55,23]
+
+// function reco(a,b){
+//     return a - b
+// }
+// array.sort(reco);
+
+// function duplicate(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i] == array[i+1]){
+//             return true
+//         }
+//     }
+//     return false
+// }
+// let result = duplicate(array);
+// console.log(result);
+
+let palindromes = prompt("enter your character")
+
+function callme(){
+    
+}

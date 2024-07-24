@@ -520,11 +520,82 @@
 // }
 
 
-function callName(firstname, lastname){
-    console.log(firstname + ' ' + lastname );
-}
-callName('Tariq','Raheem')
-callName('Adil','Amin')
-callName('Rehmat','Khawaja')
-callName('Zeeshan','Ramzan')
+// function callName(firstname, lastname){
+//     console.log(firstname + ' ' + lastname );
+// }
+// callName('Tariq','Raheem')
+// callName('Adil','Amin')
+// callName('Rehmat','Khawaja')
+// callName('Zeeshan','Ramzan')
 
+
+
+// let num = 5;
+
+// let num2 = 7;
+
+
+// console.log(num+num2);
+
+
+// function sum(num1,num2 = 0) {
+
+//     console.log(num1+num2);
+// }
+
+
+// sum(1,7)
+
+// my name is adilll amin
+
+
+// console.log(Math.round(6.2));
+// console.log(Math.floor(6.8));
+// console.log(Math.ceil(6.1));
+
+// function sayHello (){
+//     console.log('I am Tariq Raheem');
+// }
+
+// function  giveMelength(arr){
+
+//    return  arr.length
+// }
+
+//  const res =  giveMelength([2,4,5,6]);
+//  const tes =  giveMelength([2,4,5,6]);
+
+//  console.log(res);
+//  console.log(tes);
+
+// sayHello();
+
+
+// function subtract(num1,num2){
+//     return num1 - num2;
+// }
+// let result = subtract(12,5)
+// console.log(result);
+
+
+// even = (num) => {
+//     if(num%2 == 0){
+//         console.log(`${num} is even`);
+//     }
+//     else{
+//         console.log(`${num} is odd`);
+//     }
+// }
+// even(358);
+
+
+// function greet(name,greeting = 'hello'){
+//     console.log(greeting +' ' + name);
+// }
+// greet('Tariq');
+
+let arr = [2,3,4,5,7,10,2,1,9,20,23]
+
+let max = (arr) => arr.reduce((largenumber,num) => Math.min(largenumber,num));
+
+console.log(max(arr));

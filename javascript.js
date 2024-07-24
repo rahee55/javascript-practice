@@ -494,29 +494,37 @@
 // }
 // console.table(students);
 
-let info = [
-    {userName: 'tariq-raheem',password: 'Tariq@9544'}
-]
+// Password Authentication 
 
-for(i = 0; i < 2;i++){
+// let info = [
+//     {userName: 'tariq-raheem',password: 'Tariq@9544'}
+// ]
 
-    let Name = prompt('enter your username')
-    let pass = prompt('enter your password')
+// for(i = 0; i < 2;i++){
 
-    if(info[0].userName == Name && info[0].password == pass){
-        alert('Login successfull') 
-        break;
-    }
-    else if(info[0].password !== pass){
-        alert('Wrong Password! you need to Forget your Password')
-    } 
-    confirm('are you sure you want to reset password');
+//     let Name = prompt('enter your username')
+//     let pass = prompt('enter your password')
 
-    let user = prompt('enter new password');
+//     if(info[0].userName == Name && info[0].password == pass){
+//         alert('Login successfull') 
+//         break;
+//     }
+//     else if(info[0].password !== pass){
+//         alert('Wrong Password! you need to Forget your Password')
+//     } 
+//     confirm('are you sure you want to reset password');
 
-    info[0].password = user;
+//     let user = prompt('enter new password');
+
+//     info[0].password = user;
+// }
+
+
+function callName(firstname, lastname){
+    console.log(firstname + ' ' + lastname );
 }
-
-
-
+callName('Tariq','Raheem')
+callName('Adil','Amin')
+callName('Rehmat','Khawaja')
+callName('Zeeshan','Ramzan')
 

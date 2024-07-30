@@ -625,8 +625,34 @@
 // let result = duplicate(array);
 // console.log(result);
 
-let palindromes = prompt("enter your character")
+// let palindromes = prompt("enter your character")
 
-function callme(){
-    
+// function callme(palindromes){
+//     let len = palindromes.length
+//     let war = Math.floor(len/2)
+
+//    for (let i = 0; i < war; i++) {
+//     if (palindromes[i] !== palindromes[len - 1- i]) {
+//         return `${palindromes} is not palindrome`;
+//     }
+//    }
+//    return `${palindromes} is palindrome`
+// }
+//  let res = callme(palindromes);
+//  console.log(res);
+
+let BirthDate = prompt('enter your date of birth')
+
+function ageCalculater(birthDate,newDate){
+    birthDate = new Date(BirthDate);
+    newDate = new Date(2024,6,30);
+
+    let years = (newDate.getFullYear() - birthDate.getFullYear())
+
+    if(newDate.getMonth() < birthDate.getMonth() || newDate.getMonth() == birthDate.getMonth() && newDate.getDate() < birthDate.getDate()){
+        years--;
+    }
+    return years
 }
+let res = ageCalculater();
+console.log(res);

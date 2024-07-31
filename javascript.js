@@ -698,3 +698,8 @@
 // let res = Days()
 // alert(res);
 
+function getFirstValue(arr) {
+    return arr[0];
+}
+let result = getFirstValue([5,2,4,5,6,8])
+console.log(result);

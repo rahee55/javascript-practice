@@ -689,3 +689,12 @@
 // }
 
 // setInterval(time,1000);
+
+
+// function Days(years) {
+//     let year = prompt('enter years');
+//     return year * 365
+// }
+// let res = Days()
+// alert(res);
+

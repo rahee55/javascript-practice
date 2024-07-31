@@ -698,8 +698,24 @@
 // let res = Days()
 // alert(res);
 
-function getFirstValue(arr) {
-    return arr[0];
+// function getFirstValue(arr) {
+//     return arr[0];
+// }
+// let result = getFirstValue([5,2,4,5,6,8])
+// console.log(result);
+
+function divide(num1,num2) {
+    let number1 = prompt('enter your first number');
+    let number2 = prompt('enter your second number');
+    if(number1 != number2){
+        return number1
+    }
+    else if(number1 == number2){
+        return number1/number2;
+    }
+    else if(number1 == ' ' && number2 == ' '){
+        return 'enter number'
+    }
 }
-let result = getFirstValue([5,2,4,5,6,8])
-console.log(result);
+let result = divide();
+alert(result);

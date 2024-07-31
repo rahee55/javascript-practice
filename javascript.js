@@ -641,18 +641,51 @@
 //  let res = callme(palindromes);
 //  console.log(res);
 
-let BirthDate = prompt('enter your date of birth')
+// let year = new Date();
 
-function ageCalculater(birthDate,newDate){
-    birthDate = new Date(BirthDate);
-    newDate = new Date(2024,6,30);
+// console.log(year.getDate());
+// console.log(year.getMonth());
+// console.log(year.getFullYear());
 
-    let years = (newDate.getFullYear() - birthDate.getFullYear())
+// function ageCalculater(){
+//     let totalLife = prompt("enter your date of birth")
+//     if(totalLife < "3000,12,31"){
+//         alert("enter valid date")
+//     }
+//     else{
+//         const birthDate = new Date(totalLife);
+//         const newDate = new Date();
+//         let year = newDate.getFullYear() - birthDate.getFullYear()
+//         let month = newDate.getMonth() - birthDate.getMonth()
+//         let day = newDate.getDay() - birthDate.getDay()
+//         let hour = newDate.getHours() - birthDate.getHours()
+//         let second = newDate.getSeconds() - birthDate.getSeconds()
+//         let millisecond = newDate.getMilliseconds() - birthDate.getMilliseconds()
+//         return `${year} years ${month} months ${day} days ${hour} hours ${second} seconds ${millisecond} milliseconds`
+//     }
+// }
+// let result = ageCalculater();
+// alert(result);
 
-    if(newDate.getMonth() < birthDate.getMonth() || newDate.getMonth() == birthDate.getMonth() && newDate.getDate() < birthDate.getDate()){
-        years--;
-    }
-    return years
-}
-let res = ageCalculater();
-console.log(res);
+
+// function clock() {
+//     let date = new Date();
+//     let hours = date.getHours();
+//     let minutes = date.getMinutes();
+//     let second = date.getSeconds();
+
+//     return `${hours} : ${minutes} : ${second}`
+// }
+
+// let rex = clock(1000);
+// alert(rex);
+
+// function time(){
+//     var d = new Date();
+//     var s = d.getSeconds();
+//     var m = d.getMinutes();
+//     var h = d.getHours();
+//     console.log(h + ":" + m + ":" + s);
+// }
+
+// setInterval(time,1000);

@@ -594,16 +594,16 @@
 // }
 // greet('Tariq');
 
-// let array = [23,12,3,546,786,2,9,1,0,22,6457]
+// let array = [23,12,3,546,786,2,9,22,6457]
 
 // function number(array){
-//     let max = array[0]
+//     let min = array[0]
 //     for (let i = 0; i < array.length; i++) {
-//         if(array[i] < max){
-//             max = array[i]
+//         if(array[i] < min){
+//             min = array[i]
 //         }
 //     }
-//     return max
+//     return min
 // }
 // console.log(number(array));
 
@@ -704,18 +704,32 @@
 // let result = getFirstValue([5,2,4,5,6,8])
 // console.log(result);
 
-function divide(num1,num2) {
-    let number1 = prompt('enter your first number');
-    let number2 = prompt('enter your second number');
-    if(number1 != number2){
-        return number1
+// function divide(num1,num2) {
+//     let number1 = prompt('enter your first number');
+//     let number2 = prompt('enter your second number');
+//     if(number1 != number2){
+//         return number1
+//     }
+//     else if(number1 == number2){
+//         return number1/number2;
+//     }
+//     else if(number1 == ' ' && number2 == ' '){
+//         return 'enter number'
+//     }
+// }
+// let result = divide();
+// alert(result);
+
+let arr = [23,34,56,78,123,896,999,46,33]
+
+function smalestLargest(arr) {
+    let min = arr[0]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < min) {
+            min = arr[i]
+        }
     }
-    else if(number1 == number2){
-        return number1/number2;
-    }
-    else if(number1 == ' ' && number2 == ' '){
-        return 'enter number'
-    }
+    return min
 }
-let result = divide();
-alert(result);
+let res = smalestLargest()
+console.log(res);

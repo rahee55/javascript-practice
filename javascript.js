@@ -720,16 +720,109 @@
 // let result = divide();
 // alert(result);
 
-let arr = [23,34,56,78,123,896,999,46,33]
+// let arr = [23,34,56,78,123,896,999,46,33]
 
-function smalestLargest(arr) {
-    let min = arr[0]
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < min) {
-            min = arr[i]
-        }
+// function smalestLargest(arr) {
+//     let min = arr[0]
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < min) {
+//             min = arr[i]
+//         }
+//     }
+//     return min
+// }
+// let res = smalestLargest()
+// console.log(res);
+
+// 
+
+// let taskManager = [
+// {
+//     1:'Javascript',
+//     2:'HTML&CSS',
+//     3:'MERN/MEAN',
+// },
+// {
+//     Task:'Javascript',
+//     Duration:'3month',
+//     project:'5',
+//     Venue:'UET',
+//     Location:'Lahore'
+// },
+// {
+//     Task:'HTML&CSS',
+//     Duration:'2month',
+//     project:'4',
+//     Venue:'LUMS',
+//     Location:'Islamabad'
+// },
+// {
+//     Task:'MERN/MEAN',
+//     Duration:'3month',
+//     project:'7',
+//     Venue:'UET',
+//     Location:'Lahore'
+// }]
+
+// let check = prompt('enter (check) to view Tasks')
+// if (check == 'check') {
+//     console.log(taskManager[0])
+//     let task = prompt('enter Task number')
+//     if (task == '1') {
+//         console.log(taskManager[1]);
+//     }
+//     else if (task == '2') {
+//         console.log(taskManager[2]);
+//     }
+//     else if (task == '3') {
+//         console.log(taskManager[3]);
+//     }
+// }
+
+let check = prompt('which account do want to login (client or freelancer)')
+
+function client() {
+    let arr =[{userName:'tariqrahee',pass:'rahee@123'},5] 
+   for (let i = 0; i < arr.length; i++) {
+    let enter = prompt('enter your username')
+    let enterp = prompt('enter your user password')
+    if (arr[0].userName == enter && arr[0].pass == enterp) {
+        alert('Login Successfull')
+        break;
     }
-    return min
+    else{
+        alert('username or password is incorrect you want to change them')
+    }
+    confirm('Do you want to change password and username')
+    let user = prompt('enter your new username')
+    let pass = prompt('enter your new password')
+    arr[0].userName = user;
+    arr[0].pass = pass;
+   }
 }
-let res = smalestLargest()
-console.log(res);
+function freelancer() {
+    let arr =[{userName:'tariqraheem',pass:'raheem@55'},0] 
+   for (let i = 0; i < arr.length; i++) {
+    let enter = prompt('enter your username')
+    let enterp = prompt('enter your user password')
+    if (arr[0].userName == enter && arr[0].pass == enterp) {
+        alert('Login Successfull')
+        break;
+    }
+    else{
+        alert('username or password is incorrect you want to change them')
+    }
+    confirm('Do you want to change password and username')
+    let user = prompt('enter your new username')
+    let pass = prompt('enter your new password')
+    arr[0].userName = user;
+    arr[0].pass = pass;
+   }
+}
+
+if (check == 'client') {
+    client();
+}
+else if(check == 'freelancer'){
+    freelancer();
+}

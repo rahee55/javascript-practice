@@ -782,8 +782,8 @@
 let check = prompt('which account do want to login (client or freelancer)')
 
 function client() {
-    let arr =[{userName:'tariqrahee',pass:'rahee@123'},5] 
-   for (let i = 0; i < arr.length; i++) {
+    let arr = [{userName:'tariqrahee',pass:'rahee@123'},5] 
+    for (let i = 0; i < arr.length; i++) {
     let enter = prompt('enter your username')
     let enterp = prompt('enter your user password')
     if (arr[0].userName == enter && arr[0].pass == enterp) {
@@ -825,4 +825,301 @@ if (check == 'client') {
 }
 else if(check == 'freelancer'){
     freelancer();
+}
+
+function clientWOrk() {
+    let offer = prompt('1. Web Development\n2. SEO \n3.Web Design\n4.Content writting\n5.Speed Optimization');
+    function webDevelop() {
+        let webD = prompt('1.Tariq Raheem \n 2.Adil Amin \n 3.Rehmat Ullah \n 4.Faheem Nasir')
+        if (webD == '1') {
+            let Tariq = {
+                Name:'Tariq Raheem',
+                Projects:'25',
+                Experince:'6 months',
+                Rating:'4.2',
+                Price:'85k'
+            }
+            console.log(Tariq);
+            confirm('Do you want to Deal with Tariq Raheem')
+            alert('Send 85k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '2') {
+            let Adil = {
+                Name:'Adil Amin',
+                Projects:'50',
+                Experince:'3 year',
+                Rating:'5.0',
+                Price:'120k'
+            }
+            console.log(Adil);
+            confirm('Do you want to Deal with Adil Amin')
+            alert('Send 120k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '3') {
+            let Rehmat = {
+                Name:'Rehmat Ullah',
+                Projects:'29',
+                Experince:'6 months',
+                Rating:'4.6',
+                Price:'90k'
+            }
+            console.log(Rehmat);
+            confirm('Do you want to Deal with Rehmat Ullah')
+            alert('Send 90k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '4') {
+            let Faheem = {
+                Name:'Faheem Nasir',
+                Projects:'70',
+                Experince:'5 year',
+                Rating:'5.0',
+                Price:'200k'
+            }
+            console.log(Faheem);
+            confirm('Do you want to Deal with Faheem Nasir')
+            alert('Send 200k in Bank account')
+            alert('deal done successfully');
+        }
+    }
+    function SEO() {
+        let webD = prompt('1.Zeeshan Ramzan \n 2.Rehmat Chacha \n 3.Shehriar Qadir \n 4.Wajid Raheem')
+        if (webD == '1') {
+            let zeeshan = {
+                Name:'Zeeshan Ramzan',
+                Projects:'25',
+                Experince:'6 months',
+                Rating:'4.2',
+                Price:'85k'
+            }
+            console.log(zeeshan);
+            confirm('Do you want to Deal with Tariq Raheem')
+            alert('Send 85k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '2') {
+            let Rehmat = {
+                Name:'Rehmat chaha',
+                Projects:'50',
+                Experince:'3 year',
+                Rating:'5.0',
+                Price:'120k'
+            }
+            console.log(Rehmat);
+            confirm('Do you want to Deal with Adil Amin')
+            alert('Send 120k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '3') {
+            let Sheri = {
+                Name:'Shehriar Qadir',
+                Projects:'29',
+                Experince:'6 months',
+                Rating:'4.6',
+                Price:'90k'
+            }
+            console.log(Sheri);
+            confirm('Do you want to Deal with Rehmat Ullah')
+            alert('Send 90k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '4') {
+            let Wajid = {
+                Name:'Wajid Raheem',
+                Projects:'70',
+                Experince:'5 year',
+                Rating:'5.0',
+                Price:'200k'
+            }
+            console.log(Wajid);
+            confirm('Do you want to Deal with Faheem Nasir')
+            alert('Send 200k in Bank account')
+            alert('deal done successfully');
+        }
+    }
+    function webDesign() {
+        let webD = prompt('1.Tariq Raheem \n 2.Adil Amin \n 3.Rehmat Ullah \n 4.Faheem Nasir')
+        if (webD == '1') {
+            let Tariq = {
+                Name:'Tariq Raheem',
+                Projects:'25',
+                Experince:'6 months',
+                Rating:'4.2',
+                Price:'85k'
+            }
+            console.log(Tariq);
+            confirm('Do you want to Deal with Tariq Raheem')
+            alert('Send 85k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '2') {
+            let Adil = {
+                Name:'Adil Amin',
+                Projects:'50',
+                Experince:'3 year',
+                Rating:'5.0',
+                Price:'120k'
+            }
+            console.log(Adil);
+            confirm('Do you want to Deal with Adil Amin')
+            alert('Send 120k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '3') {
+            let Rehmat = {
+                Name:'Rehmat Ullah',
+                Projects:'29',
+                Experince:'6 months',
+                Rating:'4.6',
+                Price:'90k'
+            }
+            console.log(Rehmat);
+            confirm('Do you want to Deal with Rehmat Ullah')
+            alert('Send 90k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '4') {
+            let Faheem = {
+                Name:'Faheem Nasir',
+                Projects:'70',
+                Experince:'5 year',
+                Rating:'5.0',
+                Price:'200k'
+            }
+            console.log(Faheem);
+            confirm('Do you want to Deal with Faheem Nasir')
+            alert('Send 200k in Bank account')
+            alert('deal done successfully');
+        }
+    }
+    function contentWritting() {
+        let webD = prompt('1.Tariq Raheem \n 2.Adil Amin \n 3.Rehmat Ullah \n 4.Faheem Nasir')
+        if (webD == '1') {
+            let Tariq = {
+                Name:'Tariq Raheem',
+                Projects:'25',
+                Experince:'6 months',
+                Rating:'4.2',
+                Price:'85k'
+            }
+            console.log(Tariq);
+            confirm('Do you want to Deal with Tariq Raheem')
+            alert('Send 85k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '2') {
+            let Adil = {
+                Name:'Adil Amin',
+                Projects:'50',
+                Experince:'3 year',
+                Rating:'5.0',
+                Price:'120k'
+            }
+            console.log(Adil);
+            confirm('Do you want to Deal with Adil Amin')
+            alert('Send 120k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '3') {
+            let Rehmat = {
+                Name:'Rehmat Ullah',
+                Projects:'29',
+                Experince:'6 months',
+                Rating:'4.6',
+                Price:'90k'
+            }
+            console.log(Rehmat);
+            confirm('Do you want to Deal with Rehmat Ullah')
+            alert('Send 90k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '4') {
+            let Faheem = {
+                Name:'Faheem Nasir',
+                Projects:'70',
+                Experince:'5 year',
+                Rating:'5.0',
+                Price:'200k'
+            }
+            console.log(Faheem);
+            confirm('Do you want to Deal with Faheem Nasir')
+            alert('Send 200k in Bank account')
+            alert('deal done successfully');
+        }
+    }
+    function speedOptimization() {
+        let webD = prompt('1.Tariq Raheem \n 2.Adil Amin \n 3.Rehmat Ullah \n 4.Faheem Nasir')
+        if (webD == '1') {
+            let Tariq = {
+                Name:'Tariq Raheem',
+                Projects:'25',
+                Experince:'6 months',
+                Rating:'4.2',
+                Price:'85k'
+            }
+            console.log(Tariq);
+            confirm('Do you want to Deal with Tariq Raheem')
+            alert('Send 85k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '2') {
+            let Adil = {
+                Name:'Adil Amin',
+                Projects:'50',
+                Experince:'3 year',
+                Rating:'5.0',
+                Price:'120k'
+            }
+            console.log(Adil);
+            confirm('Do you want to Deal with Adil Amin')
+            alert('Send 120k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '3') {
+            let Rehmat = {
+                Name:'Rehmat Ullah',
+                Projects:'29',
+                Experince:'6 months',
+                Rating:'4.6',
+                Price:'90k'
+            }
+            console.log(Rehmat);
+            confirm('Do you want to Deal with Rehmat Ullah')
+            alert('Send 90k in Bank account')
+            alert('deal done successfully');
+        }
+        if (webD == '4') {
+            let Faheem = {
+                Name:'Faheem Nasir',
+                Projects:'70',
+                Experince:'5 year',
+                Rating:'5.0',
+                Price:'200k'
+            }
+            console.log(Faheem);
+            confirm('Do you want to Deal with Faheem Nasir')
+            alert('Send 200k in Bank account')
+            alert('deal done successfully');
+        }
+    }
+    if (offer == '1') {
+        webDevelop();
+    }
+    else if(offer == '2'){
+        SEO();
+    }
+    else if(offer == '3'){
+        webDesign();
+    }
+    else if(offer == '4'){
+        contentWritting();
+    }
+    else if(offer == '5'){
+        speedOptimization();
+    }
+}
+if (check == 'client') {
+    clientWOrk();
 }

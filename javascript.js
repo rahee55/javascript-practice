@@ -1130,8 +1130,59 @@
 // console.log(parent);
 // parent.innerHTML += "<h1> adil </h1> "
 
-function addstd() {
-    let sname = document.getElementById("name").value;
-    let listname = document.getElementById("listName");
-    listname.innerHTML +=  `<li> ${sname} </li>`
-}
+// function addstd() {
+//     let sname = document.getElementById("name").value;
+//     let listname = document.getElementById("listName");
+//     listname.innerHTML +=  `<li> ${sname} </li>`
+// }
+// let arr = ['web','website development','graphic designing','search engine optimization']
+
+
+
+// function timeDelay(){
+
+
+
+//     function set1() {
+//         let m1 = 'web'
+//         console.log(m1);
+//     }
+//     function set2() {
+//         let m1 = 'engine'
+//         console.log(m1);
+//     }
+//     function set3() {
+//         let m1 = 'optimization'
+//         console.log(m1);
+//     }
+
+
+//     set1();
+//     set2();
+//     set3();
+
+//     document.getElementById('first').disabled = true;
+
+//     console.log('wait 5 second');
+
+//     setTimeout(function () {
+//         document.getElementById('first').disabled = false;
+//     },5000);
+
+// }
+
+let arr=[]
+function firstNonRepeatedChar(str) {
+    for (let i = 0; i < str.length; i++) {
+        let chacha = str[i];
+        
+        if (str.indexOf(chacha) === str.lastIndexOf(chacha)) {
+            return chacha
+        }
+    }
+    
+    return null
+    
+
+  }
+  console.log(firstNonRepeatedChar("sweets"));

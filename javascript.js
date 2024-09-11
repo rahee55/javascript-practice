@@ -1171,18 +1171,36 @@
 
 // }
 
-let arr=[]
-function firstNonRepeatedChar(str) {
-    for (let i = 0; i < str.length; i++) {
-        let chacha = str[i];
+
+
+
+// function firstNonRepeatedChar(str) {
+//     for (let i = 0; i < str.length; i++) {
+//         let chacha = str[i];
         
-        if (str.indexOf(chacha) === str.lastIndexOf(chacha)) {
-            return chacha
-        }
-    }
+//         if (str.indexOf(chacha) === str.lastIndexOf(chacha)) {
+//             return chacha
+//         }
+//     }
     
-    return null
+//     return null
     
 
+//   }
+//   console.log(firstNonRepeatedChar("sweets"));
+
+
+function areAnagrams(str1, str2) {
+    if (str1.length != str2.length) {
+        return false
+    }
+
+    let sotrstr1 = str1.split('').sort().join('')
+    let sotrstr2 = str2.split('').sort().join('')
+    
+    if (sotrstr1 === sotrstr2) {
+        return true
+    }
+    
   }
-  console.log(firstNonRepeatedChar("sweets"));
+  console.log(areAnagrams("listen", "silent"));

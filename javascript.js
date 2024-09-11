@@ -1190,17 +1190,33 @@
 //   console.log(firstNonRepeatedChar("sweets"));
 
 
-function areAnagrams(str1, str2) {
-    if (str1.length != str2.length) {
-        return false
-    }
+// function areAnagrams(str1, str2) {
+//     if (str1.length != str2.length) {
+//         return false
+//     }
 
-    let sotrstr1 = str1.split('').sort().join('')
-    let sotrstr2 = str2.split('').sort().join('')
+//     let sotrstr1 = str1.split('').sort().join('')
+//     let sotrstr2 = str2.split('').sort().join('')
     
-    if (sotrstr1 === sotrstr2) {
-        return true
+//     if (sotrstr1 === sotrstr2) {
+//         return true
+//     }
+    
+//   }
+//   console.log(areAnagrams("listen", "silent"));
+
+
+
+function isPalindrome(str) {
+
+    let check = str.split('').reverse().join('') ;
+  
+    if (str === check) {
+        console.log(`${str} is Palindrome`);
+        return
     }
     
-  }
-  console.log(areAnagrams("listen", "silent"));
+    return `${str} is not Palindrome`;
+  
+}
+console.log(isPalindrome("balab"));
